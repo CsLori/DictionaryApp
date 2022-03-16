@@ -29,6 +29,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+//api.dictionary.dev/api/v2/entries/en
+
 @Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
