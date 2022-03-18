@@ -1,13 +1,13 @@
 package com.example.dictionaryapp.feature_dictionary.data.remote
 
-import com.example.dictionaryapp.feature_dictionary.data.remote.dto.WordDto
+import com.example.dictionaryapp.feature_dictionary.data.remote.dto.WordInfoDto
 import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface DictionaryAPi {
 
     @GET("/api/v2/entries/en{word}")
-    suspend fun getWord(
+    suspend fun getWordInfo(
         @Path("word") word: String
-    ) : List<WordDto>
+    ) : List<WordInfoDto>
 }
